@@ -1,0 +1,8 @@
+<div>
+    <input [(ngModel)]="content" placeholder="What's happening?" />
+    <button (click)="postTweet()">Tweet</button>
+</div>
+
+<div *ngFor="let post of posts">
+    <p>{{ post.user }}: {{ post.content }}</p>
+</div>
